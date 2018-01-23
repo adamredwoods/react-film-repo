@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 
 const PREFIX = "https://image.tmdb.org/t/p/w780";
 
