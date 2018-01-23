@@ -11,9 +11,7 @@ const Detail = (props) =>{
       </div>
    )
 
-   if(!props || !props.movie || !props.movie.id) {
-
-   } else {
+   if(props && props.movie && props.movie.id) {
 
       const backdropUrl = `https://image.tmdb.org/t/p/w1280/${props.movie.backdrop_path}`
       const posterUrl = `https://image.tmdb.org/t/p/w780/${props.movie.poster_path}`
@@ -33,10 +31,7 @@ const Detail = (props) =>{
              </p>
            </div>
          </div>
-
       )
-
-
    }
 
    return (
