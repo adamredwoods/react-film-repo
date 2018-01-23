@@ -6,12 +6,18 @@ import Detail from "./detail.js";
 import TMDB from "./TMDB.js";
 
 class App extends Component {
+
+   handleClick = (event) => {
+      
+      console.log(event);
+   }
+
   render() {
     return (
       <div className="App">
-         <div className="film-library">
+         <div className="film-library" >
 
-            <Film allFilms={TMDB.films} />
+            <Film allFilms={TMDB.films} clickCallback={this.handleClick}/>
 
 
             <div className="film-details">
