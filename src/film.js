@@ -13,18 +13,17 @@ const FilmRow = (props) => {
 }
 
 
-class Film extends Component {
-   render() {
-      return (
-         <div className="film-list">
-           <h1 className="section-title">FILMS</h1>
-           {this.props.allFilms.map( film=>(
-             <FilmRow item={film} key={film.id} clickCallback={this.props.clickCallback}/>
-          )
-         )}
-        </div>
-     )
-  }
+const Film = (props) => {
+
+   return (
+      <div className="film-list">
+        <h1 className="section-title">FILMS</h1>
+        {props.allFilms.map( film=>(
+          <FilmRow item={film} key={film.id} clickCallback={props.clickCallback}/>
+       )
+      )}
+     </div>
+  )
 }
 
 

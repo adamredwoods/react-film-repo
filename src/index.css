@@ -164,7 +164,7 @@ figure {
 
 .film-details {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .film-details > .section-title {
@@ -177,8 +177,9 @@ figure {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .film-detail > p {
